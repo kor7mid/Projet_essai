@@ -1,0 +1,57 @@
+======>for statelesswidget class
+
+	class learning extends Statelesswidget{
+
+@override
+
+Widget build (BuildContext context){
+return Container();
+}
+}
+
+
+
+=========>Statefull widget
+
+
+class Myfirstapp extends StatefullWidget{
+@override
+
+_ MyfirstappState createState => _ Myfirstapp();
+
+}
+
+class _MyfirstappState extends State<Myfirstapp>{
+
+@override
+
+widget build (BuildContext context){
+return Container();
+}
+}
+
+===========>
+
+class _Myfirstapp extends State<Myfirstapp>{
+Sting note='Trip A';
+
+void _onPressed(){
+setState((){
+note='Trip B';
+});
+}
+
+@override
+
+widget build (BuildContext context){
+return column{
+chlidren:<widget>[
+Icon(),
+Text('$note'),
+TextButton(
+onpressed:_onPressed,),],
+);
+}
+
+
+
